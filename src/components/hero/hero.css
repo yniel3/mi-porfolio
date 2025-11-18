@@ -1,0 +1,106 @@
+.hero {
+    width: 100%;
+    min-height: calc(90vh - 100px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+    
+    &::before {
+        content: "";
+        width: 400px;
+        height: 400px;
+        left: 50%;
+        top: 40vh;
+        background-image: url(logo-b.svg);
+        background-size: cover;
+        animation: floaty 10s alternate infinite;
+        position: absolute;
+        z-index: -1;
+        filter: blur(7px);
+    }
+    
+    .texto {
+        padding: 0 .5rem;
+        width: clamp(320px, 100%, 750px);
+        display: flex;
+        flex-direction: column;
+        font-size: 1rem;
+        gap: 2rem;
+        color: var(--text-color-lg);
+        text-shadow: 3px 0px 5px rgb(63, 60, 60);
+        word-spacing: 7px;
+        letter-spacing: 1px;
+        font-weight: 600;
+
+        .texto-h1 {
+            color: black;
+            font-size: 2.5rem;
+            font-family: var(--font-primary);
+            font-weight: 500;
+        }
+    }
+
+    .enlace {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        gap: 1rem;
+        background-color: var(--color-bg);
+        width: clamp(360px, 95%, 450px);
+        border-radius: 5px;
+        box-shadow: var(--box-shadow) inset;
+        margin: 1rem 0;
+
+        .enlace-h3 {
+            font-family: var(--font-primary);
+            font-size: 1rem;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        .divLinks {
+            display: flex;
+            gap: 2rem;
+
+            .link-social {
+                height: 48px;
+                width: 48px;
+                transition: transform .4s;
+
+                .img-link {
+                    height: 100%;
+                }
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+
+            }
+        }
+    }
+}
+
+@media (width > 768px) {
+
+}
+
+@keyframes floaty {
+    0% {
+        transform: translate(-50%, -50%) translateY(0);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) translateY(-20px);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) translateY(0);
+    }
+}

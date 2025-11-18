@@ -1,0 +1,59 @@
+
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.footer {
+    width: 100%;
+    background-color: var(--color-bg);
+    padding: 2rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-top: 2px solid var(--color-border);
+    box-shadow: var(--box-shadow);
+
+    .contacto {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+
+
+        .footer-title {
+            color: var(--color-border);
+            font-family: var(--font-primary);
+            font-size: 1.2rem;
+            font-weight: normal;
+        }
+
+        .footer-link {
+            width: max-content;
+            text-decoration-color: var(--color-border);
+            color: black;
+            font-size: 1.3rem;
+        }
+    }
+
+    .logo-info {
+        display: flex;
+        align-self: flex-end;
+        height: clamp(50px, 25vh, 120px);
+        overflow: hidden;
+
+        .logo-footer {
+            height: 100%;
+        }
+    }
+
+    .copyC {
+        color: gray;
+        text-align: center;
+    }
+}

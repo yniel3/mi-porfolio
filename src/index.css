@@ -1,0 +1,103 @@
+:root {
+    --color-bg: #f0e4e4;
+    --color-border: #E65926;
+    --box-shadow:  0 0 7px rgba(0, 0, 0, 0.4);
+    --color-titles: #66422e;
+    --dark-gray: #363636;
+    --text-color-lg: #fff6e5;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@property --font-primary {
+    syntax: '<string>';
+    inherits: true;
+    initial-value: 'Momo Trust Display';
+}
+
+@property --font-secondary {
+    syntax: '<string>';
+    inherits: true;
+    initial-value: 'Lato';
+}
+
+
+@property --color1 {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: #be7e53;
+}
+
+@property --color2 {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: #625a66;
+}
+
+@property --color3 {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: #4c4c4d;
+}
+
+@property --angle {
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 0deg;
+}
+
+
+body {
+    animation: shimmer 30s alternate infinite;
+    background-image: linear-gradient(var(--angle),
+            var(--color1),
+            var(--color2),
+            var(--color3));
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    #root {
+        width: 100%;
+        min-height: 100vh;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        background-size: cover;
+        font-family: var(--font-secondary), var(--font-primary), sans-serif;
+    }
+
+    &:has(:where(.open)) {
+        overflow: hidden;
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        --angle: 0deg;
+        --color1: #be7e53;
+        --color2: #746b65;
+        --color3: #625a66;
+    }
+
+    50% {
+        --angle: 180deg;
+        --color1: #703b17;
+        --color2: #917f74;
+        --color3: #453a4b;
+    }
+
+    100% {
+        --angle: 360deg;
+        --color1: #bd9f8b;
+        --color2: #5f4e44;
+        --color3: #604f69;
+    }
+}

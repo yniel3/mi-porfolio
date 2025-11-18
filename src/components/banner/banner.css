@@ -1,0 +1,97 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.tech-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-bg);
+    padding: 2rem 0;
+    border-bottom: 2px solid var(--color-border);
+    border-top: 2px solid var(--color-border);
+    box-shadow: var(--box-shadow);
+
+    .tech-title {
+        text-align: center;
+        font-family: var(--font-primary);
+        font-weight: normal;
+    }
+
+    .carrusel {
+        width: clamp(320px, 100%, 850px);
+        display: flex;
+        overflow-x: auto;
+        position: relative;
+        background-color: var(--color-bg);
+        overflow: hidden;
+        font-family: var(--font-primary);
+        font-weight: 500;
+
+        &::after {
+            content: "";
+            height: 100%;
+            width: 55px;
+            right: -5px;
+            background-image: linear-gradient(-90deg, var(--color-bg), transparent);
+            background-position: right center;
+            position: absolute;
+            z-index: 2;
+        }
+
+        &::before {
+            content: "";
+            height: 100%;
+            width: 55px;
+            left: -5px;
+            background-image: linear-gradient(90deg, var(--color-bg), transparent);
+            position: absolute;
+            z-index: 2;
+        }
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        .grupo {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            justify-content: center;
+            animation: movimiento linear 30s infinite;
+            padding-right: 1em;
+
+            .element {
+                flex: 0 0 5em;
+                padding: 1rem;
+                border-radius: 5px;
+                text-align: center;
+                align-items: center;
+                transition: transform .5s;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+
+                img {
+                    height: 64px;
+                }
+            }
+        }
+    }
+}
+
+@keyframes movimiento {
+    from {
+        translate: 0;
+    }
+
+    to {
+        translate: -100%;
+    }
+}

@@ -1,0 +1,94 @@
+{
+    "hero": {
+        "title": "Desarrollador Web Creativo",
+        "description": [
+            {
+                "enlace": "Aquí tienes algunos enlaces a mis redes sociales (no tan sociales):"
+            },
+            {
+                "paragraph": "Soy un desarrollador web autodidacta venezolano, actualmente residenciado en Brasil. Mi camino en la programación comenzó en 2023, impulsado por la curiosidad y el deseo de construir cosas desde cero. Empecé con HTML, CSS y JavaScript enfocado al desarrollo Frontend, pero pronto descubrí el Backend con Node.js, lo que despertó en mí un fuerte interés por entender cómo funcionan los servidores y explorar herramientas como Docker."
+            },
+            {
+                "paragraph": "Aunque aún no trabajo formalmente en el área de tecnología, no me rindo. Sigo aprendiendo en mi tiempo libre, enfrentando desafíos y creando proyectos que me acercan a mi meta. Creo firmemente que el aprendizaje constante es la clave, y por eso me gusta compartir lo que sé para ayudar a otros que también están empezando."
+            }
+        ]
+    },
+    "slider": {
+        "title": "He trabajado con estas tecnologías a lo largo de mi aprendizaje:"
+    },
+    "projects": [
+        {
+            "imagenSrc": "pokedex.png",
+            "descripcion": [
+                {
+                    "paragraph": "Mi primera aplicación desarrollada con JavaScript, la cual permite buscar pokémons por nombre o número utilizando una API externa."
+                },
+                {
+                    "paragraph": "Pensé en modificarlo un poco, pero quise dejarlo así para recordar cómo empecé."
+                }
+            ],
+            "link": "https://yniel3.github.io/pokedex/",
+            "nameProject": "Pokédex"
+        },
+        {
+            "imagenSrc": "app-recetas.png",
+            "descripcion": [
+                {
+                    "paragraph": "Aplicación web hecha con JavaScript que permite a los usuarios buscar recetas mediante una API externa. Pueden marcarlas como favoritas y verlas luego."
+                },
+                {
+                    "paragraph": "Es un proyecto del curso del Profesor Juan Pablo de la Torre en Udemy, solo que cambié algunas cosas para aumentar la complejidad en ese momento."
+                }
+            ],
+            "link": "https://yniel3.github.io/app-recetas/",
+            "nameProject": "La Cocina"
+        },
+        {
+            "imagenSrc": "kmarket-logo.png",
+            "descripcion": [
+                {
+                    "paragraph": "Una aplicación web para publicar, visualizar y filtrar publicaciones de usuarios registrados. Cuenta con autenticación, envío de emails y más."
+                },
+                {
+                    "paragraph": "Aprendí a ver cómo se relacionan las apps con las APIs y las bases de datos. Me gustó mucho trabajar con estas tecnologías."
+                }
+            ],
+            "link": "https://github.com/yniel3/KMarket",
+            "nameProject": "Marketplace"
+        },
+        {
+            "imagenSrc": "viajes.png",
+            "descripcion": [
+                {
+                    "paragraph": "Aplicación hecha con Express que permite explorar destinos turísticos. Toda la información se gestiona con Sequelize como ORM."
+                },
+                {
+                    "paragraph": "Me gustó mucho finalizarlo; al principio se me hizo complicado y pensé en dejarlo. Node, Express y las bases de datos son cosas que ahora me gustan mucho."
+                }
+            ],
+            "link": "https://github.com/yniel3/proyecto-viajes",
+            "nameProject": "Agencia de viajes"
+        }
+    ],
+    "links": [
+        {
+            "name": "Linkedin",
+            "url": "https://www.linkedin.com/in/johnniel-orozco-87b52a301/",
+            "iconSrc": "linkedin.png"
+        },
+        {
+            "name": "GitHub",
+            "url": "https://github.com/yniel3",
+            "iconSrc": "github.png"
+        },
+        {
+            "name": "Gmail",
+            "url": "mailto:ynielDev@gmail.com",
+            "iconSrc": "gmail.png"
+        }
+    ],
+    "footer": {
+        "text": "©2025 Todos los derechos reservados yniel.",
+        "title": "Contactame por aqui"
+    }
+}
