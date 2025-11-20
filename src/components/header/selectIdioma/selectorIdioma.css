@@ -16,6 +16,7 @@ select,
 .select-idioma {
     height: 36px;
     width: 36px;
+    box-sizing: border-box;
     border-radius: 50%;
     background-size: cover;
     background-position: center;
@@ -25,9 +26,10 @@ select,
     box-shadow: var(--box-shadow) inset;
     font-family: var(--font-segundary);
 
-    &::picker-icon {
+    /* &::picker-icon {
         content: "";
-    }
+        display: none;
+    } */
 
     .option-idioma:nth-child(2),
     .option-idioma.option-idioma:nth-child(4) {
