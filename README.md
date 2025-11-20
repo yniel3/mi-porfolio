@@ -14,7 +14,7 @@ Hola! Este es mi portafolio personal, creado con **React** y **react-i18next** p
 - Soporte para múltiples idiomas
 - Diseño adaptable (responsive)
 
-## 📄 Licencia
+## Licencia **:)**
 
 Este proyecto es de uso libre. Si te inspira, ¡adelante y crea el tuyo!
 
