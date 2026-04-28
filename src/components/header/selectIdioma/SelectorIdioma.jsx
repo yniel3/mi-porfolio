@@ -18,7 +18,7 @@ function SelectorIdioma() {
     return (
         <select
             className="select-idioma" id="idioma" onChange={handleLangChange}
-            value={i18n.language}
+            value={i18n.language || "es"}
             style={{ backgroundImage: `url(/assets/${i18n.language}-flag.png)` }}
         >
             {
