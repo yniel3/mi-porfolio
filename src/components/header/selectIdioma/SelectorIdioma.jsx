@@ -15,11 +15,13 @@ function SelectorIdioma() {
     const handleLangChange = (e) => {
         i18n.changeLanguage(e.target.value);
     };
+
+    console.log(i18n)
     return (
         <select
             className="select-idioma" id="idioma" onChange={handleLangChange}
-            value={i18n.language || "es"}
-            style={{ backgroundImage: `url(/assets/${i18n.language || "es"}-flag.png)` }}
+            value={i18n.resolvedLanguage }
+            style={{ backgroundImage: `url(/assets/${i18n.resolvedLanguage }-flag.png)` }}
         >
             {
                 LANGS.map(lang => (
